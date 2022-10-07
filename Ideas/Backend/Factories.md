@@ -20,7 +20,7 @@
 ### Data display
 
 Retrieve the entire row of the table containg factory data. [like this](https://www.php.net/manual/en/mysqli-result.fetch-array.php)
-Somehow transfer the data to Javascript arrays. [like this](https://www.geeksforgeeks.org/how-to-pass-a-php-array-to-a-javascript-function/)
+Somehow transfer the data to Javascript arrays. 
 
 ```php
 <?php
