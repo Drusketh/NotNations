@@ -2,4 +2,4 @@
 
 I mean what else can I say, it's not NationsGame.
 
-Make some plans here
+A storage place for all of the ideas regarding (Not) Nations, a NG successor by Zenny
