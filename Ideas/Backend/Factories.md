@@ -1,6 +1,4 @@
-# Planning
-
-### Resource Buildings/Factories
+# Resource Buildings/Factories
 	There are several options for making these in the backend
 	
 1. Dedicated Factory Table, similar to resource table
@@ -15,7 +13,7 @@
 		| --- | ------------- | --------- | --------- | --- | -------- | --------- | --------- |
 		| 1   | 12 | 4       | 0         | 1 | ...     | 2560      | 5         |
 2. Include them in the user table or nation table. 
-	* This could be more space efficient than the previous methods if and oly if I used some form of comma separated string that could later be exploded into the constituent factories, but probably not the smartest idea since it's probably easier to mess up than the above methods
+	* This could be more space efficient than the previous methods if and only if I used some form of comma separated string that could later be exploded into the constituent factories, but probably not the smartest idea since it's probably easier to mess up than the above methods
 
 			Think "farm,12,4,|,stonecutter,0,1,|,supergrass-producer,2560,5". Explode on | to obtain the values for each factory type, explode on commas and save to arrays/variables
 	
