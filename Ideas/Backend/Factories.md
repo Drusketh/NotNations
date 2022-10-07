@@ -21,4 +21,23 @@
 
 Retrieve the entire row of the table containg factory data. [like this](https://www.php.net/manual/en/mysqli-result.fetch-array.php)
 Somehow transfer the data to Javascript arrays. [like this](https://www.geeksforgeeks.org/how-to-pass-a-php-array-to-a-javascript-function/)
+
+```php
+<?php
+	// Create an array
+	$sampleArray = array(
+	    0 => "Geeks", 
+	    1 => "for", 
+	    2 => "Geeks", 
+	)
+?>
+<script>
+	// Access the array elements
+	var passedArray = <?php echo json_encode($sampleArray); ?>;
+	// Display the array elements
+	for(var i = 0; i < passedArray.length; i++){
+	    document.write(passedArray[i]);
+	}
+</script>
+```
 Use JS and factory templates to fill out the page/widget with the factory objects
