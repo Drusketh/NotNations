@@ -1,6 +1,6 @@
 # Resource Buildings/Factories
-	There are several options for making these in the backend
-	
+
+### Storing user data
 1. Dedicated Factory Table, similar to resource table
 	* In this dedicated table, there can be a uid entry and 3 columns for every factory in the game. These 3 columns for N factories would be formatted as
 
@@ -17,4 +17,8 @@
 
 			Think "farm,12,4,|,stonecutter,0,1,|,supergrass-producer,2560,5". Explode on | to obtain the values for each factory type, explode on commas and save to arrays/variables
 	
-3. 
+### Data display
+
+Retrieve the entire row of the table containg factory data. [like this](https://www.php.net/manual/en/mysqli-result.fetch-array.php)
+Somehow transfer the data to Javascript arrays. [like this](https://www.geeksforgeeks.org/how-to-pass-a-php-array-to-a-javascript-function/)
+Use JS and factory templates to fill out the page/widget with the factory objects
