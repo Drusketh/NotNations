@@ -20,23 +20,35 @@
 ### Data display
 
 Retrieve the entire row of the table containg factory data. [like this](https://www.php.net/manual/en/mysqli-result.fetch-array.php)
+```php
+<?php
+
+	$sql = "SELECT * FROM table WHERE ID = '$id'";
+    $stmt = mysqli_stmt_init($ng);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        header("location: ../index.php?error=holyshitwtf");
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "i", $id);
+    mysqli_stmt_execute($stmt);
+
+	$result = mysqli_stmt_get_result($stmt)
+    $resultdata = mysqli_fetch_array($result, MYSQLI_NUM);
+?>
+```
 Somehow transfer the data to Javascript arrays. 
 
 ```php
-<?php
-	// Create an array
-	$sampleArray = array(
-	    0 => "Geeks", 
-	    1 => "for", 
-	    2 => "Geeks", 
-	)
-?>
+// include the php file that makes the requests to the db
+
 <script>
 	// Access the array elements
-	var passedArray = <?php echo json_encode($sampleArray); ?>;
+	var passedArray = <?php echo json_encode($resultdata); ?>;
 	// Display the array elements
 	for(var i = 0; i < passedArray.length; i++){
-	    document.write(passedArray[i]);
+	    make the page look pretty and give me numbers
 	}
 </script>
 ```
