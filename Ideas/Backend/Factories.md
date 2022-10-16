@@ -59,3 +59,5 @@ Somehow transfer the data to Javascript arrays.
 </script>
 ```
 Use JS and factory templates to fill out the page/widget with the factory objects
+
+![[Pasted image 20221015235235.png]]
