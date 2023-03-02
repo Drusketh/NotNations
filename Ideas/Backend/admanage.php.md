@@ -1,0 +1,1 @@
+Should be an administration page, different from a mod menu. This page should be for Developers only to add game elements in through forms.
