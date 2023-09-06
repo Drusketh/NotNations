@@ -1,0 +1,1 @@
+* admanage, footer, and mkfac+res need the sql queries saved into functions that return arrays
