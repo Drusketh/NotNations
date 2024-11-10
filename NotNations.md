@@ -1,8 +1,19 @@
-[[README]]
-[[battle.php]]
-[[getbattle.php]]
-[[getdivision.php]]
-[[Biomes]]
-[[Factories]]
-[[Units]]
-[[update]]
+%% Begin Waypoint %%
+- **Devlog**
+	- [[Untitled]]
+- **Ideas**
+	- **Backend**
+		- [[admanage.php]]
+		- [[battle.php]]
+		- [[Biomes]]
+		- [[Factories]]
+		- [[getbattle.php]]
+		- [[getdivision.php]]
+		- [[TODO]]
+		- [[Units]]
+		- [[update]]
+	- **Gameplay**
+	- **Units**
+- [[README]]
+
+%% End Waypoint %%
